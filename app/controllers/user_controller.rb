@@ -8,7 +8,7 @@ class UserController < ApplicationController
   end
 
   def home
-    @appointments = User.appointments
+    # @appointments = User.appointments
   end
 
   def index
