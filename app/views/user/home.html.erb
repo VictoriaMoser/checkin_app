@@ -1,27 +1,27 @@
 <div class="top-bar">
-  <!-- <img src="../assets/carecloud_logo.png" alt="Care Cloud Logo"/> -->
+  <%= image_tag("carecloud_logo.png") %>
 </div>
 
-<div class="appointments">
+<div class="appointments white-background">
 
-  <h2>UPCOMING APPOINTMENTS</h2>
+  <h2 id="upcoming">UPCOMING APPOINTMENTS</h2>
   <% @appointments.each do |app| %>
-    <label for="date">Date: </label>
-    <%= Date.parse(app["start_time"]).to_s %>
-    <br>
-    <label for="time">Time: </label>
-    <%= Time.parse(app["start_time"]).to_s %>
-    <br>
-    <label for="doctor">Doctor: </label>
-    <br>
+  <label for="date">Date: </label>
+  <%= Date.parse(app["start_time"]).to_s %>
+  <br>
+  <label for="time">Time: </label>
+  <%= Time.parse(app["start_time"]).to_s %>
+  <br>
+  <label for="doctor">Doctor: </label>
+  <%= app["location"]["name"] %>
+  <br>
     <div class="appointment-buttons">
       <%= button_to "Confirm", update_personal_path(id: app["id"]) %>
       <% if Date.tomorrow > Date.parse(app["start_time"]) && Date.yesterday < Date.parse(app["start_time"]) && app["appointment_status"]["code"] == "P" %>
-        <%= button_to "Check In" %>
+        <%= button_to "Check In", checkin_success_path, method: 'get' %>
       <% end %>
     </div>
     <br><br>
   <% end %>
-
 
 </div>

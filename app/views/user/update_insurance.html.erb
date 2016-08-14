@@ -1,9 +1,11 @@
-<div class="update-personal">
-  Insurance Provider: <%= @patient_info["insurance_profiles"][1]["insurance_policies"].first["type"] %><br>
-  Member Number: <%= @patient_info["insurance_profiles"][1]["insurance_policies"].first["member_number"] %>
-</div>
+
 <div class="update-insurance">
   <span>DO YOU NEED TO UPDATE YOUR INSURANCE INFORMATION?</span>
+</div>
+<br>
+<div class="force-text-yay">
+  Insurance Provider: <%= @patient_info["insurance_profiles"][1]["insurance_policies"].first["type"] %><br>
+  Member Number: <%= @patient_info["insurance_profiles"][1]["insurance_policies"].first["member_number"] %>
 </div>
 
 <div class="update-buttons">

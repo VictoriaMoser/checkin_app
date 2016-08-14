@@ -21,6 +21,7 @@ class UserController < ApplicationController
       end
     end
     @appointments
+
   end
 
   def index
@@ -48,11 +49,11 @@ class UserController < ApplicationController
 
   private
 
-    def authorize
-      if current_user.nil?
-        redirect_to login_url, alert: "Not authorized! Please log in."
-      end
+  def authorize
+    if current_user.nil?
+      redirect_to login_url, alert: "Not authorized! Please log in."
     end
+  end
 
     def get_patient
       api = CareCloudApi.new

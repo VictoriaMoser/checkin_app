@@ -46,18 +46,24 @@ body {
   padding: 25px 0 25px 0;
   background-color: #009bde;
 }
+
 #upcoming {
   margin-top: 0;
   font-size: 7vw;
 }
+
 .white-background h2 {
   color: #BCBCBC;
   text-align: center;
   padding: 50px 0 0 0 ;
+
+
 }
+
 .white-background label {
   padding-left: 1em;
 }
+
 .appointments {
   color: #BCBCBC;
   width: 100%;
@@ -79,6 +85,7 @@ body {
   width: 90%;
   margin: 25px 5% 10px 5%;
 }
+
 /*############################################################################*/
 /*Update Personal Page (udpate_personal.html)*/
 /*############################################################################*/
@@ -135,6 +142,16 @@ body {
   width: 75%;
   margin: 50% auto 0 auto;
 }
+
+.force-text-yay {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+}
+
 .update-buttons {
   text-align: center;
 }
@@ -151,10 +168,12 @@ body {
 /*############################################################################*/
 /*Personal Form Page (personal_form.html)*/
 /*############################################################################*/
+
 .personal-form h2 {
   font-size: 5vw;
   margin: 0 0 25px 0;
 }
+
 .personal-form .form {
   font-size: 2vw;
   color: #BCBCBC;
@@ -192,9 +211,13 @@ p {
   width: 90%;
   margin: 0 5% 0 5%;
 }
+
+
 #uploadh2 {
   font-size: 3em;
 }
+
+
 .upload-documents {
   text-align: center;
   width: 90%;
@@ -224,9 +247,11 @@ p {
 /*############################################################################*/
 /*Payments Page (payments.html)*/
 /*############################################################################*/
+
 .payment-body {
   height: 0vh;
 }
+
 .payment {
   text-align: center;
   font-size: 3em;

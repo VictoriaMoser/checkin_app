@@ -1,18 +1,32 @@
-<div class="update-personal">
-<%= session[:appointment] %>
-  <br>
-  Patient Name: <%= @patient_info["first_name"].downcase.capitalize %> <%= @patient_info["last_name"].downcase.capitalize %><br>
-  Street Address: <%= @patient_info["addresses"][0]["line1"] %><br>
-  City: <%= @patient_info["addresses"][0]["city"].downcase.capitalize %><br>
-  State: <%= @patient_info["addresses"][0]["state"] %><br>
-  Zip Code: <%= @patient_info["addresses"][0]["zip"] %><br>
-  Phone Number: <%= @patient_info["phones"][0]["phone_number"] %>
-</div>
-<div class="update-personal">
-  <span>DO YOU NEED TO UPDATE YOUR PERSONAL INFORMATION?</span>
-</div>
+<body class='white-background'>
+  <div class="top-bar">
+     <img src="../assets/carecloud_logo.png" alt="Care Cloud Logo"/>
+   </div>
 
-<div class="update-buttons">
-<a href="personal_form.html"><input type="button" value="YES"></a>
-<a href="update_insurance.html"><input type="button" value="NO"></a> 
-</div>
+  <div class="update-personal">
+    <span>DO YOU NEED TO UPDATE YOUR PERSONAL INFORMATION?</span>
+  </div>
+
+  <form class="personal-display" method="post">
+
+    <div class="update-personal">
+      <br>
+      <label for="name">Patient Name: <%= @patient_info["first_name"].downcase.capitalize %> <%= @patient_info["last_name"].downcase.capitalize %></label><br>
+      <label for="address">Street Address: <%= @patient_info["addresses"][0]["line1"] %></label><br>
+      <label for="city">City: <%= @patient_info["addresses"][0]["city"].downcase.capitalize %></label><br>
+      <label for="state">State: <%= @patient_info["addresses"][0]["state"] %></label><br>
+      <label for="zip-code">Zip Code: <%= @patient_info["addresses"][0]["zip"] %></label><br>
+      <label for="primary-phone">Phone Number: <%= @patient_info["phones"][0]["phone_number"] %></label>
+      <!-- <label for="drivers-license">#########</label><br>
+      <label for="drivers-license-state">FL</label><br>
+      <label for="marital-status">Married</label><br> -->
+    </div>
+
+  </form>
+
+  <div class="update-buttons">
+    <a href="personal_form.html"><input id='update-yes' type="button" value="YES"></a>
+    <br>
+    <a href="update_insurance.html"><input id='update-no' type="button" value="NO"></a> 
+  </div>
+</body>
