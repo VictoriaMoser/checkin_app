@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
   get 'update_insurance', to: 'user#update_insurance'
 
+  post 'update_personal', to: 'user#update_personal'
   get 'update_personal', to: 'user#update_personal'
 
   get 'upload_doc', to: 'user#upload_doc'

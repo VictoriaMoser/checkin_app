@@ -1,10 +1,16 @@
+<div class="update-personal">
+</div>
 <div class="payment">
-  <span>YOU HAVE A CURRENT BALANCE OF:</span>
+  <span>Pay your Current Balance of $<%= @balance %></span>
   <br>
   <label for="balance"></label>
+  <span>or pay current copay of $25.00<%#= @copay %></span>
+  <br>
 </div>
 <div class="payment-options">
-  <a href="checkin_success.html"><label for="credit-card">xxxx xxxx xxxx xxxx</label></a>
+  <a href="checkin_success.html" class="update-personal"><label for="credit-card">Pay Current Balance with Master Card ending in 1234</label></a>
+  <br>
+  <a href="checkin_success.html" class="update-personal"><label for="credit-card">Pay Copay with Master Card ending in 1234</label></a>
   <br>
   <a href="checkin_frontdesk.html"><input type="button" value="DO NOT PAY"></a>
 </div>

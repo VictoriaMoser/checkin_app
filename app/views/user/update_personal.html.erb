@@ -1,4 +1,14 @@
 <div class="update-personal">
+<%= session[:appointment] %>
+  <br>
+  Patient Name: <%= @patient_info["first_name"].downcase.capitalize %> <%= @patient_info["last_name"].downcase.capitalize %><br>
+  Street Address: <%= @patient_info["addresses"][0]["line1"] %><br>
+  City: <%= @patient_info["addresses"][0]["city"].downcase.capitalize %><br>
+  State: <%= @patient_info["addresses"][0]["state"] %><br>
+  Zip Code: <%= @patient_info["addresses"][0]["zip"] %><br>
+  Phone Number: <%= @patient_info["phones"][0]["phone_number"] %>
+</div>
+<div class="update-personal">
   <span>DO YOU NEED TO UPDATE YOUR PERSONAL INFORMATION?</span>
 </div>
 

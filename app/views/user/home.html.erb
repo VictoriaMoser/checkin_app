@@ -13,14 +13,12 @@
     <%= Time.parse(app["start_time"]).to_s %>
     <br>
     <label for="doctor">Doctor: </label>
-
     <br>
-    <label for="address">Address: </label>
-    <br>
-    <div class="appoitment-buttons">
-      <a href="update_personal.html"><input type="button" value="CONFIRM"></a>
-      <br>
-      <input type="button" value="CHECK IN">
+    <div class="appointment-buttons">
+      <%= button_to "Confirm", update_personal_path(id: app["id"]) %>
+      <% if Date.tomorrow > Date.parse(app["start_time"]) && Date.yesterday < Date.parse(app["start_time"]) && app["appointment_status"]["code"] == "P" %>
+        <%= button_to "Check In" %>
+      <% end %>
     </div>
     <br><br>
   <% end %>

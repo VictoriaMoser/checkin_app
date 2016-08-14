@@ -2,33 +2,29 @@
 /*Log In Page (index.html)*/
 /*############################################################################*/
 body {
-  #009bde
-  /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Varela', sans-serif;
   background-color: #009bde;
   width: 100%;
+  height: 100vh;
+  margin: 0;
 }
-
 .log-in {
   text-align: center;
   font-size: 3em;
   font-weight: 700;
   color: white;
   width: 50%;
-  margin: 50% auto 0 auto;
+  margin: 15% auto 0 auto;
 }
-
 .log-in label {
   font-size: 1em;
 }
-
 .log-in input {
   font-size: 1em;
   height: 75px;
   border-radius: 5px;
   margin: 15px 0 25px 0;
 }
-
 #submit-button {
   color: white;
   background-color: #009bde;
@@ -37,80 +33,76 @@ body {
   width: 100%;
   margin: 0px 0 0 -10px;
 }
-
 /*############################################################################*/
 /*Appointment's Page (home.html)*/
 /*############################################################################*/
-
 .white-background {
-  background-color: white;
+  background-color: white !important;
+  width: 100vw;
+  height: 100vh;
 }
-
 .top-bar {
   text-align: center;
   padding: 25px 0 25px 0;
   background-color: #009bde;
 }
-
+#upcoming {
+  margin-top: 0;
+  font-size: 7vw;
+}
 .white-background h2 {
   color: #BCBCBC;
-  font-size: 4em;
   text-align: center;
+  padding: 50px 0 0 0 ;
 }
-
+.white-background label {
+  padding-left: 1em;
+}
 .appointments {
   color: #BCBCBC;
   width: 100%;
   font-size: 3em;
-  width: 90%;
-  margin: 0 5% 0 5%;
+  margin-left: 0;
+  margin-right: 0;
 }
-
 .each-appointment {
   border: 1px solid #009bde;
   margin: 0 25px 0px 25px;
 }
-
 .appointment-buttons input {
-  font-size: 2em;
+  font-size: 5vw;
   color: white;
   background-color: #009bde;
   border: 2px solid white;
-  border-radius: 3px;
+  border-radius: 5px;
   height: 75px;
   width: 90%;
   margin: 25px 5% 10px 5%;
 }
-
 /*############################################################################*/
 /*Update Personal Page (udpate_personal.html)*/
 /*############################################################################*/
-
 .update-personal {
   color: #BCBCBC;
   text-align: center;
   font-size: 3em;
   font-weight: 700;
   width: 75%;
-  margin: 10% auto 0 auto;
+  margin: 0 auto 0 auto;
 }
-
 .personal-display {
   text-align: center;
   width: 100%;
-  margin: 100px 0 100px 0;
+  margin: 0px 0 0px 0;
 }
-
 .personal-display label{
-  color: #BCBCBC;
   color: #009bde;
   font-size: 3em;
+  padding-left: 0px;
 }
-
 .update-buttons {
   text-align: center;
 }
-
 .update-buttons input {
   font-size: 2em;
   color: white;
@@ -118,27 +110,23 @@ body {
   width: 70%;
   height: 75px;
   border: 2px solid white;
-  border-radius: 3px;
+  border-radius: 5px;
 }
-
 #update-yes {
   color: #009bde;
   border: 2px solid #009bde;
   border-radius: 3px;
   background-color: white;
 }
-
 #update-no {
   color: #009bde;
   border: 2px solid #009bde;
   border-radius: 3px;
   background-color: white;
 }
-
 /*############################################################################*/
 /*Update Insurance Page (udpate_insurance.html)*/
 /*############################################################################*/
-
 .update-insurance {
   text-align: center;
   font-size: 3em;
@@ -147,11 +135,9 @@ body {
   width: 75%;
   margin: 50% auto 0 auto;
 }
-
 .update-buttons {
   text-align: center;
 }
-
 .update-buttons input {
   font-size: 2em;
   color: white;
@@ -162,32 +148,32 @@ body {
   border-radius: 3px;
   margin: 50px 0 0 0;
 }
-
 /*############################################################################*/
 /*Personal Form Page (personal_form.html)*/
 /*############################################################################*/
-
+.personal-form h2 {
+  font-size: 5vw;
+  margin: 0 0 25px 0;
+}
 .personal-form .form {
-  font-size: 2em;
+  font-size: 2vw;
   color: #BCBCBC;
   width: 100%;
   font-size: 3em;
-  width: 90%;
-  margin: 0 5% 0 5%;
+  width: 100%;
+  margin: 0 0 0 0;
 }
-
 .personal-form .form label {
-  margin: 0px 50px 0 0;
+  padding: 0 0 0 0px;
 }
-
 .personal-form .form input {
   font-weight: 300;
+  font-size: 5vw;
   border: 1px solid #BCBCBC;
-  margin: 10px 0 25px 0;
+  margin: 10px 0 15px 0;
 }
-
 #form-button {
-  font-size: 2em;
+  font-size: 5vw;
   color: white;
   background-color: #009bde;
   border-radius: 3px;
@@ -196,11 +182,9 @@ body {
   margin: 25px 5% 50px 5%;
   text-align: center;
 }
-
 /*############################################################################*/
 /*Upload Documents (upload_doc.html)*/
 /*############################################################################*/
-
 p {
   text-align: center;
   color: red;
@@ -208,13 +192,14 @@ p {
   width: 90%;
   margin: 0 5% 0 5%;
 }
-
+#uploadh2 {
+  font-size: 3em;
+}
 .upload-documents {
   text-align: center;
   width: 90%;
   margin: 0 5% 0 5%;
 }
-
 .upload-documents input {
   text-decoration: none;
   color: #009bde;
@@ -226,9 +211,8 @@ p {
   border-radius: 3px;
   margin: 25px 0 25px 0;
 }
-
 #confirm-button {
-  font-size: 2em;
+  font-size: 5vw;
   color: white;
   background-color: #009bde;
   border-radius: 3px;
@@ -237,24 +221,22 @@ p {
   margin: 25px 5% 50px 5%;
   text-align: center;
 }
-
 /*############################################################################*/
 /*Payments Page (payments.html)*/
 /*############################################################################*/
-
+.payment-body {
+  height: 0vh;
+}
 .payment {
   text-align: center;
   font-size: 3em;
   font-weight: 700;
   color: white;
-  width: 75%;
-  margin: 50% auto 0 auto;
+  margin: 50% 0 0 0;
 }
-
 .payment-options {
   text-align: center;
 }
-
 .payment-options input {
   font-size: 2em;
   color: white;
@@ -265,7 +247,6 @@ p {
   border-radius: 3px;
   margin: 50px 0 0 0;
 }
-
 .payment-options select {
   font-size: 2em;
   color: #009bde;
@@ -275,15 +256,12 @@ p {
   border-radius: 3px;
   margin: 50px 0 0 0;
 }
-
 #total-balance {
   font-size: 2em;
 }
-
 /*############################################################################*/
 /*Check In Success & Front Desk (checkin_succes.html)*/
 /*############################################################################*/
-
 .checkin {
   text-align: center;
   font-size: 3em;
@@ -292,12 +270,10 @@ p {
   width: 75%;
   margin: 25% auto 0 auto;
 }
-
 .checkin img {
   margin: 100px 0 50px 0;
   width: 50%;
 }
-
 .front-desk {
   text-align: center;
   font-size: 2em;
