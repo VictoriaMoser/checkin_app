@@ -1,14 +1,14 @@
-<%= stylesheet_link_tag "application.css" %>
+<div class="top-bar">
+  <%= image_tag("carecloud_logo.png") %>
+</div>
+<%= form_tag '/login', class:"log-in" do %>
+  <h2>Sign In</h2>
+    <label> USERNAME: <%= text_field_tag :username %> </label>
+<br>
+<br>
+    <label> PASSWORD: <%= password_field_tag :password %></label>
+<br>
+<br>
 
-<h2>Sign In</h2>
-<%= form_tag '/login' do %>
-
-<label> USERNAME: <%= text_field_tag :username %> </label>
-<br>
-<br>
-<label> PASSWORD: <%= password_field_tag :password %></label>
-<br>
-<br>
-
-<%= submit_tag "SIGN IN " %>
+    <%= submit_tag "SIGN IN", id:"submit-button" %>
 <%end%>
