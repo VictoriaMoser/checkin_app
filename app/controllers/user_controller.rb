@@ -1,3 +1,5 @@
+require 'ccapi'
+
 class UserController < ApplicationController
   before_action :authorize
 
@@ -8,7 +10,16 @@ class UserController < ApplicationController
   end
 
   def home
-    # @appointments = User.appointments
+    @appointments = []
+    api = CareCloudApi.new
+    all_appointments = api.appointments
+    all_appointments.each do |appointment|
+      if appointment["appointment"]["patient"]["id"] == current_user.external_user_id
+        @appointments << appointment["appointment"]
+      end
+    end
+    @appointments
+
   end
 
   def index
